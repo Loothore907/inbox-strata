@@ -1,0 +1,37 @@
+{
+  "name": "inbox-strata",
+  "version": "0.1.0",
+  "description": "Local-first, explainable email inventory and cleanup",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "bin": { "inbox-strata": "dist/cli.js" },
+  "files": ["dist", "LICENSE", "README.md"],
+  "engines": { "node": ">=22" },
+  "packageManager": "pnpm@11.19.0",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "check": "pnpm typecheck && pnpm test && pnpm build",
+    "test": "tsx --test tests/**/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Loothore907/inbox-strata.git"
+  },
+  "bugs": { "url": "https://github.com/Loothore907/inbox-strata/issues" },
+  "homepage": "https://github.com/Loothore907/inbox-strata#readme",
+  "keywords": ["email", "mbox", "privacy", "cleanup", "local-first"],
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@types/node": "22.20.3",
+    "tsx": "4.23.13",
+    "typescript": "7.0.2"
+  }
+}
