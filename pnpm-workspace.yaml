@@ -1,0 +1,3 @@
+allowBuilds:
+  # tsx uses esbuild to execute TypeScript tests. Pinning tsx pins this script.
+  esbuild: true
