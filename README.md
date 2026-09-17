@@ -48,7 +48,7 @@ Recommendations are grouped by `List-ID` when available and otherwise by sender.
 - `review`: the group is ambiguous or mixes protected and bulk messages.
 - `quarantine_candidate`: every message in the group has affirmative bulk evidence and no protection evidence.
 
-See [Decision policy](docs/decision-policy.md), [Roadmap](docs/roadmap.md), and [Threat model](docs/threat-model.md).
+See [Decision policy](docs/decision-policy.md), [Roadmap](docs/roadmap.md), [Threat model](docs/threat-model.md), and the [current handoff](docs/handoffs/2026-09-16-phase-2a-gmail-readonly.md).
 
 ## Safety principles
 
